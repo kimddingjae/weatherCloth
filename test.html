@@ -1,0 +1,38 @@
+<!-- DOCTYPE : DOCTYPE declaration -->
+<!DOCTYPE html>
+<html > <!-- LANGUAGE : locale setting (value of location property in Environment) -->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=1, initial-scale=0.1, width=device-width, target-densitydpi=device-dpi">
+
+	
+	<title></title>
+ <style>
+    body { text-align: center; }
+    dt { font-weight: bold; }
+    dd { margin-bottom:5px;
+         margin-inline-start: 0px;
+       }
+    .cloth{ width: 500px; }   
+ </style>
+</head>
+<body style="text-align:center">
+    <h2 >현재 날씨</h3>
+    <dl>
+      <dt>기온</dt>
+      <dd class="temperature"></dd>
+      <dt>체감</dt>
+      <dd class="feelLike"></dd>
+      <dt>위치</dt>
+      <dd class="place"></dd>
+      <dt>설명</dt>
+      <dd class="description"></dd>
+      <dd><img class="icon" /></dd>
+    </dl>
+    
+    <img class="cloth" />
+    <script src="weather.js"></script>
+  </body>
+</html>
+  
