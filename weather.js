@@ -4,7 +4,6 @@ const button = document.querySelector('.button');
 const tempSection     = document.querySelector('.temperature');
 const feelLikeSection = document.querySelector('.feelLike');
 const placeSection    = document.querySelector('.place');
-const descSection     = document.querySelector('.description');
 const iconSection     = document.querySelector('.icon');
 const clothSection     = document.querySelector('.cloth');
 
@@ -55,14 +54,11 @@ const getWeather = (lat, lon) => {
     
     const temperature = json.main.temp;
     const feelLike = json.main.feels_like;
-    const place = json.name;
-    const description = json.weather[0].description;
-    
+    const place = json.name;    
     
     tempSection.innerText      = temperature;
     feelLikeSection.innerText  = feelLike;
     placeSection.innerText     = place;
-    descSection.innerText      = description;
     
     const icon = json.weather[0].icon;
     const iconURL = `http://openweathermap.org/img/wn/${icon}@2x.png`;
